@@ -1,4 +1,4 @@
-import styles from "./backgroundSVGs.module.css";
+import styles from './BackgroundSVGs.module.css'
 
 const BackgroundSVGs = () => {
  return (

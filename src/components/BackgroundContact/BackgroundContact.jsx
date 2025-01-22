@@ -1,5 +1,5 @@
 // import { motion } from "framer-motion";
-import styles from "./backgroundContact.module.css";
+import styles from "./BackgroundContact.module.css";
 
 const BackgroundContact = () => {
  return (
