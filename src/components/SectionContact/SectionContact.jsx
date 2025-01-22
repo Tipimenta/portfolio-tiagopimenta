@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const SectionContact = () => {
 
-  const [ref, inView] = useInView({ threshold: 0.3 });
+  const [ref, inView] = useInView({ threshold: 0.1 });
   const [hasAnimated, setHasAnimated] = useState(false);
   if (inView && !hasAnimated) {
    setHasAnimated(true);
@@ -56,9 +56,9 @@ const SectionContact = () => {
  };
 
  return (
-  <section id="section-contact" className={styles.sectionContact} >
+  <section id="section-contact" className={styles.sectionContact} ref={ref}>
    <BackgroundContact/>
-   <div className={styles.contactme} ref={ref}>
+   <div className={styles.contactme} >
     <motion.h2 variants={variants(0.5 , 0, -100)} initial="initial" animate={hasAnimated ? "animate" : "initial"}>Contato</motion.h2>
     <div className={styles.contentContact}>
      <div className={styles.textContact}>

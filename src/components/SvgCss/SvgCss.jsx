@@ -16,7 +16,7 @@ const SvgCss = ({ isVisible }) => {
     <motion.div
      className={styles.modal}
      initial={{ opacity: 0, y: -150, x: 0, pointerEvents: "none" }}
-     animate={{ opacity: 1, y: -200, x: 0, pointerEvents: "initial " }}
+     animate={{ opacity: 1, y: -250, x: 0, pointerEvents: "initial " }}
      exit={{ opacity: 0, y: -150 }}
      transition={{ duration: 0.3 }}
     >
