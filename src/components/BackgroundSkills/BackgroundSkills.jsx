@@ -1,5 +1,5 @@
 // import { motion } from "framer-motion";
-import styles from "./Backgroundskills.module.css";
+import styles from "./BackgroundSkills.module.css";
 
 const BackgroundSkills = () => {
  return (
