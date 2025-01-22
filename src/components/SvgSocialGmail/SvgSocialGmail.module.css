@@ -1,0 +1,18 @@
+.socialGmail {
+  max-width: 48px;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .socialGmail {
+    max-width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialGmail {
+    max-width: 30px;
+  }
+}

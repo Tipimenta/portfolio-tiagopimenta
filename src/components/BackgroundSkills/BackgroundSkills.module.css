@@ -1,0 +1,57 @@
+.backgroundSkills {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+}
+
+.rectangle1 {
+  animation: brilhar 24s ease-in-out infinite;
+}
+
+.rectangle2 {
+  animation: brilhar 50s ease-in-out infinite;
+}
+
+.rectangle3 {
+  animation: brilhar 13s ease-in-out infinite;
+}
+
+.rectangle4 {
+  animation: brilhar 20s ease-in-out infinite;
+}
+
+.rectangle5 {
+  animation: brilhar 9s ease-in-out infinite;
+}
+
+.rectangle6 {
+  animation: brilhar 26s ease-in-out infinite;
+}
+
+.rectangle7 {
+  animation: brilhar 8s ease-in-out infinite;
+}
+
+
+
+
+@keyframes brilhar {
+
+  0%,
+  6% {
+    stroke-opacity: 0;
+  }
+
+  7%,
+  15% {
+    stroke-opacity: 0.25;
+  }
+
+  16%,
+  100% {
+    stroke-opacity: 0;
+  }
+}

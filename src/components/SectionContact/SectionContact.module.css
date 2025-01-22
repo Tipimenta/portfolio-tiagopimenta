@@ -1,0 +1,245 @@
+.sectionContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.contactme {
+  background-color: rgba(251, 250, 250, 0.019);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contentContact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.textContact {
+  width: 80%;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.textContact p {
+  font-family: 'Saira', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: var(--gray-color);
+}
+
+.form {
+  width: 80%;
+  max-width: 800px;
+  min-height: 500px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 32px;
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px;
+  color: white;
+  background-color: rgba(43, 40, 40, 0.379);
+  border: 1px solid green;
+  border-radius: 4px;
+  font-family: 'Saira', sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  transition: all 0.4s ease-in-out;
+  filter: blur(100%);
+}
+
+.input {
+  height: 50px;
+  caret-color: var(--secondary-color);
+}
+
+.textarea {
+  height: 177px;
+  max-height: 300px;
+  min-height: 50px;
+  resize: vertical;
+  overflow: hidden;
+  caret-color: var(--secondary-color);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  font-family: 'Saira', sans-serif;
+  font-size: 16px;
+  color: rgb(133, 145, 145);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:focus::placeholder,
+.textarea:focus::placeholder {
+  opacity: 1;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  font-family: 'Saira', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.label2 {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  font-family: 'Saira', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.input:focus,
+.input:hover,
+.input:not(:placeholder-shown) {
+  border: 1px solid white;
+}
+
+.input:focus+.label,
+.input:not(:placeholder-shown)+.label {
+  top: 0%;
+  left: 8px;
+  font-size: 10px;
+  background-color: black;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.textarea:focus,
+.textarea:hover,
+.textarea:not(:placeholder-shown) {
+  border: 1px solid white;
+}
+
+.textarea:focus+.label2,
+.textarea:not(:placeholder-shown)+.label2 {
+  top: 0%;
+  left: 8px;
+  font-size: 10px;
+  background-color: black;
+  padding: 0 4px;
+  border-radius: 2px;
+}
+
+.cards {
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1200px) {
+  .textContact p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 980px) {
+
+  .cards {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    ;
+  }
+
+  .contentContact {
+    flex-direction: column;
+  }
+
+  .textContact {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .form {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 770px) {
+
+
+  .textContact {
+    padding: 0 10px;
+    /* Reduz ainda mais o espaçamento lateral */
+    text-align: justify;
+    /* Centraliza o texto em telas pequenas */
+  }
+
+}
+
+@media screen and (max-width: 645px) {
+  .textContact p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .textcontact {
+    flex-direction: column;
+    /* Mantém a organização em coluna */
+    width: 100%;
+    /* Ocupa toda a largura disponível */
+    padding: 0 5px;
+    /* Padding mínimo */
+  }
+
+
+}

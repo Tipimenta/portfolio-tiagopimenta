@@ -1,0 +1,116 @@
+/* Variáveis globais */
+:root {
+  --primary-color: #A4BD1C;
+  /* Cor primária do site */
+  --secondary-color: #00c95af1;
+  /* Cor do thumb do scrollbar */
+  --gray-color: #cccccc;
+  --background-color: #030917;
+  /* Cor de fundo */
+  --scrollbar-size: 7px;
+  /* Largura do scrollbar */
+  --text-color: white;
+  /* Cor do texto */
+  --font-family: 'Saira', sans-serif;
+  /* Fonte padrão */
+  --scrollbar-border-radius: 16px;
+  /* Borda arredondada do scrollbar */
+  --font-size-base: 1.125rem;
+  /* 18px */
+  --font-size-medium: 16px;
+  --font-size-small: 14px;
+  --spacing-small: 20px;
+  --spacing-medium: 32px;
+  --spacing-large: 45px;
+}
+
+/* Reset básico */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-color);
+}
+
+/* Comportamento de scroll suave e snap */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos do scrollbar */
+body {
+  --sb-track-color: var(--background-color);
+  --sb-thumb-color: var(--secondary-color);
+  --sb-size: var(--scrollbar-size);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: var(--scrollbar-border-radius);
+}
+
+/* Seções com snap */
+section {
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 3.5rem;
+  ;
+  font-weight: 300;
+  display: inline-block;
+  background: linear-gradient(224.78deg,
+      var(--primary-color) 8.12%,
+      #007936 92.21%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+h6 {
+  font-size: 2.5rem;
+  ;
+  font-weight: 300;
+  display: inline-block;
+  background: linear-gradient(224.78deg,
+      var(--primary-color) 8.12%,
+      #007936 92.21%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+/* Fallback para navegadores que não suportam ::-webkit-scrollbar */
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--secondary-color) var(--sb-track-color);
+  }
+}

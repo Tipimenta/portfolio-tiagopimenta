@@ -1,0 +1,124 @@
+.ponto1,
+.desenvolvimento {
+  opacity: 0;
+  animation: surgir1 20s ease-in-out infinite;
+}
+
+.ponto3,
+.inovacao {
+  opacity: 0;
+  animation: surgir3 20s ease-in-out infinite;
+}
+
+.ponto2,
+.tecnologia {
+  opacity: 0;
+  animation: surgir2 20s ease-in-out infinite;
+}
+
+.ponto4,
+.solucao {
+  opacity: 0;
+  animation: surgir4 20s ease-in-out infinite;
+}
+
+
+
+.radar {
+  transform: rotate3d(0, 0, 1, 0deg);
+  transform-origin: 50% 50%;
+  animation: girar 20s linear infinite;
+  /* A rotação é infinita */
+}
+
+@keyframes surgir1 {
+
+  0%,
+  6.6% {
+    opacity: 0;
+    /* Ponto 1 invisível */
+  }
+
+  6.7%,
+  13.5% {
+    opacity: 1;
+    /* Ponto 1 visível durante 2 segundos */
+  }
+
+  30% {
+    opacity: 0;
+    /* Ponto 1 invisível novamente */
+  }
+}
+
+@keyframes surgir2 {
+
+  0%,
+  33% {
+    opacity: 0;
+    /* Ponto 1 invisível */
+  }
+
+  33.01%,
+  40% {
+    opacity: 1;
+    /* Ponto 1 visível durante 2 segundos */
+  }
+
+  60% {
+    opacity: 0;
+    /* Ponto 1 invisível novamente */
+  }
+}
+
+@keyframes surgir3 {
+
+  0%,
+  60% {
+    opacity: 0;
+    /* Ponto 1 invisível */
+  }
+
+  60.01%,
+  66.8% {
+    opacity: 1;
+    /* Ponto 1 visível durante 2 segundos */
+  }
+
+  80% {
+    opacity: 0;
+    /* Ponto 1 invisível novamente */
+  }
+}
+
+@keyframes surgir4 {
+
+  0%,
+  51% {
+    opacity: 0;
+    /* Ponto 1 invisível */
+  }
+
+  51.01%,
+  58.3% {
+    opacity: 1;
+    /* Ponto 1 visível durante 2 segundos */
+  }
+
+  80% {
+    opacity: 0;
+    /* Ponto 1 invisível novamente */
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+    /* Início da rotação */
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, -360deg);
+    /* Completa a rotação */
+  }
+}

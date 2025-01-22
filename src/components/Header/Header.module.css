@@ -1,0 +1,91 @@
+.navList {
+    width: 100%;
+    max-width: 1440px;
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    top: 0;
+    margin: 0 auto;
+    background: #030917;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* Para suporte Safari */
+    transition: all 0.3s ease;
+    padding: 0 20px;
+}
+
+.navListScrolled {
+    background: rgba(3, 9, 23, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    height: 3.75rem;
+    gap: 1.25rem;
+}
+
+.navListLeft,
+.navListRight {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navList li a {
+    font-size: 28px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+
+
+.navList li a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #03a44cf1;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+}
+
+.navList li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 769px) {
+    .navList li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .navList li a {
+        font-size: 16px;
+    }
+
+    .navListItem {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .navList li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .navList {
+        display: none;
+    }
+}

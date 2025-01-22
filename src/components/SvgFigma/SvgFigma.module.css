@@ -1,0 +1,141 @@
+.container {
+  position: absolute;
+  left: 27%;
+}
+
+.modal {
+  background: rgba(244, 255, 251, 0.074);
+  color: rgb(8, 139, 91);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: wrap;
+  z-index: 10;
+  position: absolute;
+  filter: blur(100);
+  display: inline;
+  width: 90%;
+  left: 0%;
+  transform: translateX(-50%);
+  top: -100px;
+  /* Ajuste a posição no eixo Y conforme necessário */
+  transform-origin: center;
+  right: auto;
+  /* Remove qualquer posição relativa ao lado direito */
+
+}
+
+.modal span {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 140%;
+  letter-spacing: 1px;
+}
+
+
+.animationSvg {
+  animation: flutuar 7s infinite linear 2s;
+  transition: filter 2s;
+  filter: drop-shadow(3px 2px 9px rgb(17, 175, 115));
+}
+
+.animationSvg path {
+  transition: all 2s;
+  fill: #979B99;
+}
+
+.animationSvg:hover {
+  animation-play-state: paused;
+  filter: drop-shadow(3px 2px 20px rgb(148, 255, 214));
+}
+
+.animationSvg:hover path {
+  fill: #00c95af1;
+  /* Certifique-se de que esta cor é visível */
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateX(0) translateY(0);
+    /* Começo na posição original */
+  }
+
+  25% {
+    transform: translateX(20px) translateY(-10px);
+    /* Para frente e um pouco para cima */
+  }
+
+  50% {
+    transform: translateX(-2px) translateY(0);
+    /* Para trás e volta para a posição original */
+  }
+
+  75% {
+    transform: translateX(22px) translateY(20px);
+    /* Para frente e para baixo */
+  }
+
+  100% {
+    transform: translateX(0) translateY(0);
+    /* Volta à posição inicial */
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+
+    position: static;
+    gap: 20px;
+    /* Espaçamento entre os SVGs */
+    transform: none !important;
+  }
+
+  .modal {
+    top: 100px;
+    right: -20%;
+  }
+
+  .animationSvg {
+    position: static;
+    /* Remove o comportamento absoluto */
+    animation: none;
+    /* Desativa a animação */
+    filter: none;
+    /* Remove o efeito de drop-shadow */
+    width: 50px;
+    /* Adapta o tamanho ao layout */
+    margin: 0;
+    /* Remove margens para ajustar ao layout */
+  }
+}
+
+
+@media screen and (max-width: 645px) {
+
+  .modal span {
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 0;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+
+  .modal {
+    top: 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+
+  .modal span {
+    font-size: .625rem;
+    ;
+  }
+
+  .modal {
+    top: 0px;
+  }
+}

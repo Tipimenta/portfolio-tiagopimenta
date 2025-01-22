@@ -1,0 +1,23 @@
+.logo {
+    max-width: 100%;
+    width: 50px;
+    margin-top: 15px;
+    transition: all .8s;
+}
+
+.logo:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(5px 5px 20px #ffffff);
+}
+
+@media (max-width: 770px) {
+    .logo {
+        width: 40px;
+    }
+}
+
+@media (max-width: 540px) {
+    .logo {
+        width: 30px;
+    }
+}

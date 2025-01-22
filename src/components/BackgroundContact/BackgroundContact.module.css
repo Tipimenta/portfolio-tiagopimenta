@@ -1,0 +1,62 @@
+.backgroundContact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.circle {
+  animation: moviment 15s infinite alternate;
+}
+
+.circle1 {
+  animation: moviment2 17s infinite alternate;
+}
+
+
+@keyframes moviment {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translate3d(-200px, 200px, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(200px, 200px, 0);
+  }
+
+  75% {
+    opacity: 0;
+    transform: translate3d(-200px, 200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes moviment2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(-200px, -200px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

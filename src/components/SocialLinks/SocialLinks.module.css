@@ -1,0 +1,21 @@
+.socialHome {
+ margin-top: 18px;
+}
+
+.containerSocial ul {
+ display: flex;
+ align-items: end;
+ justify-content: center;
+ gap: 20px;
+}
+
+.containerSocial ul li {
+ width: 35px;
+ transition: all .8s;
+}
+
+.containerSocial ul li:hover {
+ transform: translateY(-5px);
+ filter: drop-shadow(0 0 30px #ffffff);
+ cursor: pointer;
+}

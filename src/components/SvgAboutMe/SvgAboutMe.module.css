@@ -1,0 +1,39 @@
+.letras {
+    animation: girar 70s linear infinite;
+    transform-origin: center center;
+    transition: all 1.5s ease-out;
+}
+
+.imageAbout {
+    filter: grayscale();
+    transition: all 2s ease-out;
+}
+
+.imageAbout:hover {
+    filter: none;
+}
+
+.badge:hover .imageAbout {
+    filter: none;
+}
+
+
+
+.badge:hover .letras {
+    fill: #48ae76f1;
+
+}
+
+.badge {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(-360deg);
+    }
+}

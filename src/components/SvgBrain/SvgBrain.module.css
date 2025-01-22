@@ -1,0 +1,62 @@
+.staticBrain {
+  fill-opacity: 0;
+  transform: scale(0);
+}
+
+.animationBrain {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  z-index: -1;
+  stroke-width: 1;
+  stroke-dasharray: 0, 1000;
+  stroke-dashoffset: 1000;
+  transform-origin: center;
+  animation:
+    surgir 3s linear forwards,
+    borda 28s ease-in-out 0s forwards;
+}
+
+@keyframes surgir {
+  0% {
+    fill-opacity: 1;
+    transform: scale(0);
+  }
+
+  10% {
+    fill-opacity: 1;
+  }
+
+  100% {
+    fill-opacity: 1;
+    transform: scale(1);
+    filter: drop-shadow(1px 2px 4px rgb(148, 255, 214));
+  }
+}
+
+@keyframes borda {
+  0% {
+    fill-opacity: 1;
+    stroke-dasharray: 500, 500;
+    stroke-dashoffset: 500;
+  }
+
+  100% {
+    fill-opacity: 1;
+    stroke-dasharray: 1000, 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .animationBrain {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .animationBrain {
+    max-width: 200px;
+  }
+}

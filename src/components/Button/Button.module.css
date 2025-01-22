@@ -1,0 +1,65 @@
+.btn {
+ min-width: 180px;
+ height: 48px;
+ background: linear-gradient(150deg, #00793794 0%, #0079370a 25%, #03a44cf1 100%);
+ padding: 10px 48px;
+ position: relative;
+ display: inline-block;
+
+ color: #ffffff;
+ border-radius: 8px;
+ background-size: 200%;
+ z-index: 1;
+ overflow: hidden;
+ transition: background-position 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ text-align: center;
+ font-weight: 300;
+ border: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.secondary {
+ min-width: 180px;
+ height: 48px;
+ background: linear-gradient(150deg, #a9c6038b 0%, #a6bf1927 25%, #a6bf1927 30%, #c5e513ef 100%);
+ padding: 10px 48px;
+ position: relative;
+ display: inline-block;
+ color: WHITE;
+ border-radius: 8px;
+ background-size: 200%;
+ z-index: 1;
+ overflow: hidden;
+ transition: background-position 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ text-align: center;
+ font-weight: 300;
+ border: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.btn:hover {
+ background-position: right;
+ border: 1 solid white;
+}
+
+
+.btn::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(165deg, #c5e513fe 0%, #c5e51306 50%);
+ border-radius: inherit;
+ z-index: -1;
+ padding: 2px;
+ /* Define a largura da borda */
+ -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+ -webkit-mask-composite: xor;
+ mask-composite: exclude;
+}

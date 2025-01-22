@@ -1,0 +1,116 @@
+.SectionProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 200px;
+}
+
+.SectionProjects__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SectionProjects__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.SectionProjects__projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.SectionProjects__Texts {
+  width: 100%;
+  padding: 20px;
+}
+
+.ButtonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+
+.SectionProjects__Cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+
+
+.SectionProjects__Arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 105%;
+  width: 90%;
+}
+
+/* Arrow Buttons */
+.ArrowButton {
+
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: color 0.5s ease;
+  z-index: 20;
+}
+
+.ArrowButton:hover {
+  color: #ffffff;
+}
+
+.ArrowLeft {
+  left: 10%;
+}
+
+.ArrowRight {
+  right: 10%;
+}
+
+
+@media (max-width: 960px) {
+
+  .SectionProjects__projects {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  .SectionProjects__Cards {
+    height: 250px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 540px) {
+  .SectionProjects__Arrows {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    gap: 20px;
+    height: 145%;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 340px) {
+  .SectionProjects {
+    margin-bottom: 300px;
+  }
+}
