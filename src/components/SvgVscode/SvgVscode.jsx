@@ -33,7 +33,7 @@ const SvgVscode = ({ isVisible }) => {
     animate={
      isVisible ? { opacity: 1, y: -85, x: 250 } : { opacity: 0, y: 150 }
     } // Animação baseada na prop
-    transition={{ duration: 0.5, delay: isVisible ? 4.8 : 0 }} // Duração da transição
+    transition={{ duration: 0.5, delay: isVisible ? 3.8 : 0 }} // Duração da transição
    >
     <svg
      className={styles.animationSvg}

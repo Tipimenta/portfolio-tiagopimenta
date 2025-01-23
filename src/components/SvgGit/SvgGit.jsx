@@ -33,7 +33,7 @@ const SvgGit = ({ isVisible }) => {
     animate={
      isVisible ? { opacity: 1, y: -130, x: 230 } : { opacity: 0, y: 150 }
     } // Animação baseada na prop
-    transition={{ duration: 0.5, delay: isVisible ? 4.8 : 0 }} // Duração da transição
+    transition={{ duration: 0.5, delay: isVisible ? 3.8 : 0 }} // Duração da transição
    >
     <svg
      className={styles.animationSvg}
