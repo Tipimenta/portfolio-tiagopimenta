@@ -84,7 +84,13 @@
 @media (max-width: 570px) {
   .cardContact {
     max-height: 500px;
-    width: 80%;
+    max-width: 80%;
     ;
+  }
+}
+
+@media (max-width: 380px) {
+  .cardContact {
+    width: 100%;
   }
 }

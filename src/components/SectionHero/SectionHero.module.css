@@ -149,9 +149,10 @@ p {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 365px) {
   .buttons {
     flex-direction: column;
+    gap: 20px;
   }
 }
 
